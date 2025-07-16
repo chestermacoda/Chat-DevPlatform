@@ -1,0 +1,460 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: #fff;
+}
+body .container-fluid{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+section.painel-left{
+    width: 6%;
+    height: 100vh;
+    background-color: #fff;
+    display: block;
+    border-right: 2px solid #eee;
+    position: relative;
+}
+section.painel-left .allchat{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem !important;
+}
+section.painel-left .allchat a {
+    padding: 0.8rem !important;
+    border-radius: 50%;
+}
+section.painel-left .allchat a i{
+    font-size: 1.4rem !important;   
+}
+/* ============================= */
+
+.painel-left .navs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.painel-left .navs ul{
+    list-style: none;
+    display: block;
+}
+.painel-left .navs ul li{
+    margin: 0.8rem 0 !important;
+}
+.painel-left .navs ul li a{
+    display: flex;
+    padding: 1rem !important;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+.painel-left .navs ul li a i{
+    color: #000;
+}
+.ative,
+.painel-left .navs ul li a:hover{
+    border-radius: 6px !important;
+    background-color: #eee;
+    color: #15c8f5;
+}
+
+/* ============================================== */
+.users{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    /* background-color: #000; */
+    /* padding-left: 20px !important; */
+}
+.users .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #15c8f5; */
+    padding: 0.6rem !important;
+    margin: 10px 0 !important;
+}
+.users .btn i{
+    margin-left: 24px !important;
+}
+.users .btn .img{
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 16px !important;
+}
+
+/* ================================================== */
+header{
+    width: 28%;
+    height: 100vh;
+    display: block;
+    border-right: 2px solid #eee;
+    background-color: #fff;
+    margin: 10px 0 !important;
+    padding: 0.8rem 0.4rem !important;
+}
+
+header .logo-add{
+    display: flex;
+    justify-content: space-between;
+}
+header .logo-add .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo-add .logo img{
+    /* width: 40px; */
+    height: 40px;
+}
+header .logo-add .add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo-add .add button.btn{
+    padding: 0.3rem 0.7rem !important;
+    border: 2px solid #eee;
+    margin-right: 5px !important;
+}
+header .form-groups{
+    width: 100%;
+    margin: 1.1rem 0 !important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0 4px !important;
+}
+header .form-groups .rows .form-control{
+    padding: 0.4rem 0.8rem !important;
+    box-shadow: none;
+    border: none;
+    border: 2px solid #eee;
+}
+header .form-groups .rows .form-control::placeholder{
+    color: #727272;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/* =====================Chat People================= */
+.chats{
+    width: 100%;
+    height: 75vh;
+    /* overflow-y:scroll; */
+}
+.allusers{
+    width: 100%;
+    display: block;
+}
+.allusers .firstuser{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 10px 6px !important;
+    border-bottom: 2px solid #eee;
+}
+.allusers .firstuser:hover{
+    background-color: #eee;
+    cursor: pointer;
+}
+.allusers .firstuser .pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 14px 0px 6px  !important;
+}
+.allusers .firstuser .pictures img{
+    width: 38px;
+    height:38px ;
+    border-radius: 50%;
+}
+.allusers .firstuser .showconversation{
+    width: 100%;
+    display: block;
+    padding-top: 4px !important;
+}
+.allusers .firstuser .showconversation p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.allusers .firstuser .showconversation p.name-personal{
+    font-size: 0.8rem ;
+    font-weight: 600;
+    color: #000;
+}
+.allusers .firstuser .showconversation p.name{
+    font-size: 0.7rem;
+    color:#727272;
+    font-weight: 500;
+}
+.datanumber{
+    display: block;
+    text-align: center;
+    margin-left: 2px !important;
+}
+.datanumber .numberquantity{
+    background-color:#15c8f5;
+    padding: 2px 8px !important;
+    border-radius: 50%;
+    color: #eee;
+    font-size: 0.7rem;
+    font-weight: 500;
+} 
+.datanumber .dataweekend{
+    font-size: 0.6rem;
+    color: #15c8f5;
+    font-weight: bold;
+}
+
+/* =====================================CHATS============================ */
+main{
+    width: 100%;
+    display: block;
+}
+
+main .nav-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #eee;
+    padding: 1rem !important;
+}
+main .nav-top .other-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #727272; */
+}
+
+main .nav-top .other-user .picture-people{
+    margin-right: 10px !important;
+}
+main .nav-top .other-user img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    
+}
+main .nav-top .other-user .people-name{
+    display: block;
+    margin-left: 10px !important;
+}
+main .nav-top .other-user .people-name p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+main .nav-top .other-user .people-name p.namepeople{
+    font-size: 0.9rem ;
+    font-weight: 600;
+    color: #000;
+}
+main .nav-top .other-user .people-name p.written{
+    font-size: 0.7rem ;
+    font-weight: 600;
+    color:#05e94a;  
+}
+
+main .nav-top .other-user .allcommunication{
+    display: flex;
+}
+main .nav-top .allcommunication button.btn{
+    border: 2px solid #eee;
+    padding: 0.4rem 0.7rem !important;
+    margin-right: 4px !important;
+}
+
+
+
+/* ====================================CONVERSATION================ */
+
+.conversation{
+    width: 100%;
+    height: 80vh;
+    /* background-color: #eee; */
+    padding: 1rem !important;
+    overflow-y: scroll;
+}
+.conversation .user1{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px !important;
+}
+.conversation .user2{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+/* ===================START CONVERSATION ================= */
+.principalUser{
+    width: 200px;
+    height: 30px;
+    display: block;
+}
+.principalUser .peopleConversation{
+    display: flex;
+    margin-bottom: 10px !important;
+}
+.principalUser .peopleConversation .userconversation img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.principalUser .peopleConversation .usercomment{
+    margin-left: 10px !important;
+}
+.principalUser .peopleConversation .usercomment p{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.principalUser .peopleConversation .usercomment p.namesConversation{
+    font-size: 0.9rem ;
+    font-weight: 600;
+    color: #000;
+}
+.principalUser .peopleConversation .usercomment p.namesData{
+    font-size: 0.7rem ;
+    font-weight: 600;
+    color:#727272;  
+}
+
+/* ====================papo================= */
+.principalUser .conversatioParagraf{
+    font-size: 0.8rem;
+    text-align: left;
+    background-color: #0a80fe;
+    padding: 0.6rem 0.8rem !important;
+    border-radius: 6px;
+    color: #eee;
+    font-weight: 500;
+}
+
+.user2 .principalUser .conversatioParagraf{
+    background-color:#eee;
+}
+.user2 .principalUser .conversatioParagraf{
+    color:#727272;
+}
+
+/* ================================SEND CONVERSATION================== */
+
+.sendMessages{
+    width: 100%;
+    padding: 1rem !important;
+    border-top: 2px solid #eee;
+    /* display: flex; */
+}
+.sendMessages .rows{
+    width: 100%;
+    display: flex;
+}
+.sendMessages .rows .form-control {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    box-shadow: none;
+    border: 2px solid #eee;
+}
+.sendMessages .rows .form-control::placeholder{
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.sendMessages .rows button.btn{
+    border: 2px solid #eee;
+    padding: 0.4rem 0.8rem !important;
+    margin: 0 6px !important;
+}
+
+
+.conversationMessage{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===============================VIEW PERFIL USER================================ */
+
+.mains{
+    width: 30%;
+    /* position: absolute;
+    top: 0;
+    right: 0%; */
+    padding: 60px 10px !important;
+    /* margin-right: 0% !important; */
+    display: none;
+    transition: 0.4s;
+}
+.mains .perfils-imgs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mains .perfils-imgs .imgs-perfils{
+    height: 70px;
+    width: 75px;
+    border-radius: 50%;
+    margin-bottom: 20px !important;
+}
+.mains .dados-users{
+    width: 100%;
+    height: 200px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: #f1f1f1; */
+}
+ 
+.mains  .dados-users .cols-dados p{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+    margin: 6px 0 !important;
+    border-top: 1px solid #f1f1f1;
+    padding: 10px 0 !important;
+}
+.mains  .dados-users .cols-dados p span{
+    /* width: 100%; */
+    display: block;
+}
+.btn-closes{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 10px 14px !important;
+    
+}
+.btn-closes:hover{
+    box-shadow:0px 0px 4px #c7c7c7;
+ 
+}
+.form-denunciar{
+    display: none;
+    margin-top: 20px !important;
+}
+.denuncia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.denuncia .btn-denuniar{
+    padding: 8px 16px !important;
+}
